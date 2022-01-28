@@ -6,7 +6,7 @@ main {
 }
 
 section {
-  width: 285px;
+  /* width: 285px; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,6 +17,7 @@ section {
               inset 0.25em 0.25em 0.5em aliceblue;
   padding: 1em;
   text-align: center;
+  margin: 0 0 2em;
 }
 
 span {

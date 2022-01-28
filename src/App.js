@@ -8,6 +8,7 @@ function App() {
   const [isOpen, setIsOpen] = useState(false);
   const [lionSize, setLionSize] = useState(3);
   const [tigerSize, setTigerSize] = useState(3);
+  const [animalParade, setAnimalParade] = useState(['🦧']);
 
   return (
     <>
@@ -17,7 +18,9 @@ function App() {
         lionSize={lionSize}
         setLionSize={setLionSize}
         tigerSize={tigerSize}
-        setTigerSize={setTigerSize} />
+        setTigerSize={setTigerSize}
+        animalParade={animalParade}
+        setAnimalParade={setAnimalParade} />
     </>
 
   );

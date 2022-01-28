@@ -24,9 +24,7 @@ export default function ParadeSection({ animalParade,
         <button onClick={() => setAnimalParade([...animalParade, '🐼'])}>🐼</button>
         <button onClick={() => setAnimalParade([...animalParade, '🐨'])}>🐨</button>
         <button onClick={() => setAnimalParade([...animalParade, '🦦'])}>🦦</button>
-     
       </div>
-
     </section>
   );
 }

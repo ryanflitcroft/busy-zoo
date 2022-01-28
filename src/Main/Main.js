@@ -5,7 +5,6 @@ import FightSection from './FightSection/FightSection';
 import ParadeSection from './ParadeSection/ParadeSection';
 
 export default function Main(props) {
-  console.log(props);
   return (
     <main>
       <OpenSign isOpen={props.isOpen} setIsOpen={props.setIsOpen} />

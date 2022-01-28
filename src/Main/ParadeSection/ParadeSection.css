@@ -1,0 +1,30 @@
+span.parade {
+  display: inline;
+}
+
+.marquee {
+  animation: marquee 10s linear infinite;
+  position: absolute;
+  text-align: left;
+  bottom: 0;
+  z-index: -1;
+}
+
+@keyframes marquee {
+  0% {
+    left: 100%;
+  }
+  25% {
+    bottom: 15%;
+  }
+  50% {
+    bottom: 0;
+  }
+  75% {
+    bottom: 15%;
+  }
+  100% {
+    left: -4em;
+    bottom: 0;
+  }
+}

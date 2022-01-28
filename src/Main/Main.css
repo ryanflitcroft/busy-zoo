@@ -1,0 +1,36 @@
+main {
+  width: 100%;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 0 2em;
+}
+
+span {
+  display: block;
+  font-size: 3rem;
+  margin: 0.15em;
+}
+
+button {
+  all: unset;
+  margin: 0 1em;
+  padding: 0.25em 0.5em;
+  background: ghostwhite;
+  border: 1px solid #d3d3d3;
+  border-radius: 0.25em;
+  box-shadow: 0.15em 0.15em 0.25em #3d3d3d,
+              inset 0.05em 0.05em 0.15em aliceblue;
+  cursor: pointer;
+}
+
+button:hover {
+  font-size: 1.05em;
+}

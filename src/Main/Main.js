@@ -5,16 +5,21 @@ export default function Main(props) {
   console.log(props);
   return (
     <main>
-      <p>The zoo is {props.isOpen ? 'OPEN' : 'CLOSED'}
-      </p>
-      <div>
-        <button onClick={() => props.setIsOpen(true)}>
-          Open
-        </button>
-        <button onClick={() => props.setIsOpen(false)}>
-          Closed
-        </button>
-      </div>
+      <section>
+        <p>The zoo is 
+          <span>
+            {props.isOpen ? 'OPEN' : 'CLOSED'}
+          </span>
+        </p>
+        <div>
+          <button onClick={() => props.setIsOpen(true)}>
+            Open
+          </button>
+          <button onClick={() => props.setIsOpen(false)}>
+            Closed
+          </button>
+        </div>
+      </section>
     </main>
   );
 }

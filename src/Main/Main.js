@@ -1,6 +1,6 @@
 import React from 'react';
 import './Main.css';
-import OpenSign from './OpenSign';
+import OpenSign from './OpenSign/OpenSign';
 import FightSection from './FightSection/FightSection';
 import ParadeSection from './ParadeSection/ParadeSection';
 

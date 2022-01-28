@@ -5,9 +5,8 @@ import './ParadeSection.css';
 export default function ParadeSection({ animalParade, 
   setAnimalParade }) {
 
-  console.log(animalParade);
   return (
-    <section>
+    <section className='parade'>
       <div>
         {animalParade.map((animal, i) => 
           <Animal key={animal, i} animal={animal} />

@@ -1,5 +1,27 @@
-section
+/* section.parade div {
+  width: 100vw;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  justify-content: center;
+} */
 
 span.parade {
   display: inline;
+}
+
+.marquee {
+  animation: marquee 10s linear infinite;
+  position: absolute;
+  text-align: left;
+  bottom: 0;
+}
+
+@keyframes marquee {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -4em;
+  }
 }

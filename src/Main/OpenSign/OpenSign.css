@@ -1,0 +1,17 @@
+.sign p {
+  width: 200px;
+  background: ghostwhite;
+  border: 3px solid #d3d3d3;
+  border-radius: 1em;
+  box-shadow: 0.5em 0.5em 0.5em #3d3d3d,
+              inset 0.25em 0.25em 0.5em aliceblue;
+  padding: 0.85em;
+}
+
+span {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}

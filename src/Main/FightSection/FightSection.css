@@ -1,3 +1,9 @@
-section.fight {
-  flex-direction: row;
+.fight span {
+  display: inline-block;
+  width: 50%;
+  margin: 0;
+}
+
+.fight div button {
+  margin: 0 0.15em;
 }

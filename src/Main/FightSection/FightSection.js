@@ -9,12 +9,13 @@ export default function FightSection({ lionSize,
     <section className='fight'>
       <div>
         <span style={{ fontSize: `${lionSize}em` }}>🦁</span>
-        <button onClick={() => setLionSize(lionSize + 0.25)}>Bigger</button>
-        <button onClick={() => setLionSize(lionSize - 0.25)}>Smaller</button>
+        <span style={{ fontSize: `${tigerSize}em` }}>🐯</span>
       </div>
 
       <div>
-        <span style={{ fontSize: `${tigerSize}em` }}>🐯</span>
+        <button onClick={() => setLionSize(lionSize + 0.25)}>Bigger</button>
+        <button onClick={() => setLionSize(lionSize - 0.25)}>Smaller</button>
+
         <button onClick={() => setTigerSize(tigerSize + 0.25)}>Bigger</button>
         <button onClick={() => setTigerSize(tigerSize - 0.25)}>Smaller</button>
       </div>

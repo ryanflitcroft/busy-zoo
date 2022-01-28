@@ -9,6 +9,7 @@ export default function Main(props) {
   return (
     <main>
       <OpenSign isOpen={props.isOpen} setIsOpen={props.setIsOpen} />
+      <h2>Busy Zoo Microscopy</h2>
       <FightSection lionSize={props.lionSize}
         setLionSize={props.setLionSize}
         tigerSize={props.tigerSize}

@@ -4,7 +4,7 @@ import './OpenSign.css';
 export default function OpenSign({ isOpen, setIsOpen }) {
   return (
     <section className='sign'>
-      <p>The zoo is 
+      <p>The zoo is {isOpen ? '🌞' : '🌜'}
         <span>
           {isOpen ? 'OPEN' : 'CLOSED'}
         </span>

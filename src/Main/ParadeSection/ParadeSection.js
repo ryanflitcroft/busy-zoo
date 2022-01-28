@@ -7,6 +7,7 @@ export default function ParadeSection({ animalParade,
 
   return (
     <section className='parade'>
+      <h2>Busy Zoo Parade</h2>
       <div>
         {animalParade.map((animal, i) => 
           <Animal key={animal, i} animal={animal} />

@@ -15,6 +15,7 @@ export default class App extends Component {
       tigerSize: 3,
       animalParade: ['🦧']
     };
+
   }
 
   render() {

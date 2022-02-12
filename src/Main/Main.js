@@ -13,9 +13,10 @@ export default class Main extends Component {
         <OpenSign isOpen={this.props.isOpen} />
         <h2>Busy Zoo Microscopy</h2>
         <FightSection lionSize={this.props.lionSize}
-          setLionSize={this.props.setLionSize}
+          // setLionSize={this.props.setLionSize}
           tigerSize={this.props.tigerSize}
-          setTigerSize={this.props.setTigerSize}/>
+          // setTigerSize={this.props.setTigerSize}
+        />
         <ParadeSection animalParade={this.props.animalParade}
           // setAnimalParade={props.setAnimalParade} 
         />

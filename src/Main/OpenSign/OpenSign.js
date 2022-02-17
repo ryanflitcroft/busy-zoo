@@ -10,12 +10,18 @@ export default function OpenSign({ isOpen, setIsOpen }) {
         </span>
       </p>
       <div>
-        <button className={`${isOpen ? 'hidden' : ''}`} onClick={() => setIsOpen(true)}>
+        {
+          !isOpen
+            && <button onClick={() => setIsOpen(true)}>
           Open the zoo
-        </button>
-        <button className={`${!isOpen ? 'hidden' : ''}`} onClick={() => setIsOpen(false)}>
-          Close the zoo
-        </button>
+            </button>
+        }
+        {
+          isOpen
+            && <button onClick={() => setIsOpen(false)}>
+            Close the zoo
+            </button>
+        }
       </div>
     </section>
   );

@@ -19,16 +19,12 @@ test('renders microscopy in FightSection', () => {
   expect(antEl && flyEl).toBeInTheDocument(), 'test proves that antEl and flyEl have correct emoji textContent';
 
   const incrementButtons = screen.getAllByText(/➕/i);
-  // console.log(incrementButtons);
-  // console.log(lionSize, tigerSize);
 
   {
     incrementButtons.map((button) => fireEvent.click(button));
   }
 
-  // console.log(lionSize, tigerSize);
   expect(lionSize && tigerSize).toBe(3.25), 'test proves that state is updated for lionSize and tigerSize onClick of incrementButtons';
-
 
   rerender(<FightSection
     lionSize={lionSize}
@@ -41,20 +37,16 @@ test('renders microscopy in FightSection', () => {
     }} />);
 
   const decrementButtons = screen.getAllByText(/➖/i);
-  // console.log(decrementButtons);
   {
     decrementButtons.map((button) => 
       fireEvent.click(button)
     );
   }
-  // console.log(lionSize, tigerSize);
   expect(lionSize && tigerSize).toBe(3), 'test proves that state is updated for lionSize and tigerSize onClick of decrementButtons';
   {
     decrementButtons.map((button) => 
       fireEvent.click(button)
     );
   }
-  // console.log(lionSize, tigerSize);
   expect(lionSize && tigerSize).toBe(2.75), 'this test proves that the value of lionSize and tigerSize is decremented by 0.25 each onClick of decrementButton.';
-
 });
